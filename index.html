@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav({
+                    edge: 'left',
+                    draggable: true
+                });
+            });
+        </script>
+        <style>
+             @font-face{
+                font-family: embrace;
+                src: url(fonts/embrace.ttf);
+            }
+            
+            @font-face{
+                font-family: happyfox;
+                src: url(fonts/HappyFox-Condensed.otf);
+            }
+            
+            
+            @font-face{
+                font-family: nexa;
+                src: url(fonts/Nexa_Bold.otf);
+                font-weight: bold;
+            }
+            
+            @font-face{
+                font-family: nexa;
+                src: url(fonts/Nexa_Light.otf);
+                
+            }
+            
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+            
+            html{
+                font-family: nexa;
+            }
+
+        </style>
+
+        <!-- Include google map lib -->
+
+    </head>
+
+    <body class="white">
+        <nav class="nav-extended nav-full-header pjf-blue">
+            <div class="nav-background center pjf-blue z-depth-2">
+                <img src="http://panamajazzfestival.com/wp-content/uploads/2017/04/headerpjf.jpg" width="100%">
+            </div>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="valign-wrapper">
+                        <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0">
+                            <div class="hide-on-med-and-down">
+                                <p style="font-family: embrace; padding-top:75;" class="pjf-yellow-text hide-on-med-and-down">15 Panama Jazz Festival</p>
+                            </div>
+                            <div class=" hide-on-large-only">
+                                <p style="font-family: embrace; padding-top:95;" class="pjf-yellow-text">15 Panama Jazz Festival</p>
+                            </div>
+<!--                            <img src="http://panamajazzfestival.com/wp-content/uploads/2017/06/logo-pagina-web1.png" height="50" style="clip(100px,100px)">-->
+                          </a>
+                    </div>
+                        <a href="#" data-activates="side-mob" class="button-collapse "><i class="material-icons">menu</i></a>
+                        <div class="categories-wrapper left">
+                        <div class="categories-container pin-top">
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Ediciones Anteriores</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Prensa</a></li>
+                    </ul>
+                    <ul id="side-mob" class="side-nav">
+                        <li><div class="background center-align"><img src="http://panamajazzfestival.com/wp-content/uploads/2017/06/logo-pagina-web1.png" class="center-align" style="padding: 10">
+                            </div></li>
+                         <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Ediciones Anteriores</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Prensa</a></li>
+                    </ul>
+                            </div></div>
+                    </div>
+                <div class="nav-content">
+                    &nbsp;<br>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <br>
+                <div class="col s6 m6 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://www.allaboutjazz.com/photos/2010/danilperez2014_800x480.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Danilo Perez<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Danilo Perez<i class="material-icons right">close</i></span>
+                            <p style="text-align: justify;">Bienvenidos a nuestra decimoquinta edición del Panama Jazz Festival, proyecto cultural donde la creatividad, intercambio, talento e inspiración han convertido este evento en una referencia internacional. Desde el 15 al 20 de enero del 2018, nuestra capital se convierte en el escenario del jazz mundial, gracias al apoyo de gobierno, empresas privadas, organizaciones no gubernamentales y la inestimable pasión y fidelidad de un público local y extranjero. El festival es el evento anual más importante que realiza la Fundación Danilo Pérez donde transforma positivamente la sociedad a través de la música. Los invito a celebrar con música para crear un ritmo que inspire paz, amor y hermandad.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s6 m6 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://static1.squarespace.com/static/55aede63e4b0d3eba6378c8a/55c6709ee4b0960d6d1cbf95/55c67fb8e4b05dcc99ee24bf/1439150511707/Jesse+Class.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Fundacion Danilo Perez<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Fundacion Danilo Perez<i class="material-icons right">close</i></span>
+                            <p style="text-align: justify;">La Fundación Danilo Pérez fue establecida en el año 2005, pero el trabajo y espíritu que personifica su misión tienen sus orígenes hace veinticinco años cuando el pianista Danilo Pérez comenzó a desarrollar programas de educación musical en Panamá y el resto del mundo.<br><br>La base del trabajo de la Fundación es la educación musical y en términos más generales, el desarrollo humano. Su propósito es proveer oportunidades para que los jóvenes desarrollen su máximo potencial y lleven una vida productiva.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l12">
+                    <div class="card">
+                        <div class="card-content">
+<!--                            <img src="https://www.allaboutjazz.com/photos/2010/danilperez2014_800x480.jpg">-->
+                            <img src="imgs/shcedule_eng.PNG" class="materialboxed" width="100%">
+                        </div>
+<!--
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p style="text-align: justify;text-justify: inter-word;">Bienvenidos a nuestra decimoquinta edición del Panama Jazz Festival, proyecto cultural donde la creatividad, intercambio, talento e inspiración han convertido este evento en una referencia internacional. Desde el 15 al 20 de enero del 2018, nuestra capital se convierte en el escenario del jazz mundial, gracias al apoyo de gobierno, empresas privadas, organizaciones no gubernamentales y la inestimable pasión y fidelidad de un público local y extranjero. El festival es el evento anual más importante que realiza la Fundación Danilo Pérez donde transforma positivamente la sociedad a través de la música. Los invito a celebrar con música para crear un ritmo que inspire paz, amor y hermandad.</p>
+                                <br>
+                                <h5 class="header right">Danilo Perez</h5>
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l12">
+                    <div class="card">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_-12u-ZQ9Mc" frameborder="0" allowfullscreen></iframe>
+                                </div>
+<!--                                <p style="text-align: justify;text-justify: inter-word;">Bienvenidos a nuestra decimoquinta edición del Panama Jazz Festival, proyecto cultural donde la creatividad, intercambio, talento e inspiración han convertido este evento en una referencia internacional. Desde el 15 al 20 de enero del 2018, nuestra capital se convierte en el escenario del jazz mundial, gracias al apoyo de gobierno, empresas privadas, organizaciones no gubernamentales y la inestimable pasión y fidelidad de un público local y extranjero. El festival es el evento anual más importante que realiza la Fundación Danilo Pérez donde transforma positivamente la sociedad a través de la música. Los invito a celebrar con música para crear un ritmo que inspire paz, amor y hermandad.</p>-->
+<!--
+                                <br>
+                                <h5 class="header right">Danilo Perez</h5>
+-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                </div>
+            
+            </div>
+        </div>
+    </body>
+</html>
