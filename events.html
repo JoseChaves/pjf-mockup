@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav({
+                    edge: 'left',
+                    draggable: true
+                });
+            });
+        </script>
+        <style>
+             @font-face{
+                font-family: embrace;
+                src: url(fonts/embrace.ttf);
+            }
+            
+            @font-face{
+                font-family: happyfox;
+                src: url(fonts/HappyFox-Condensed.otf);
+            }
+            
+            
+            @font-face{
+                font-family: nexa;
+                src: url(fonts/Nexa_Bold.otf);
+                font-weight: bold;
+            }
+            
+            @font-face{
+                font-family: nexa;
+                src: url(fonts/Nexa_Light.otf);
+                
+            }
+            
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+            
+            html{
+                font-family: nexa;
+            }
+
+        </style>
+
+        <!-- Include google map lib -->
+
+    </head>
+
+    <body class="white">
+        <nav class="nav-extended nav-full-header pjf-blue">
+            
+<!--
+            <div class="nav-background center pjf-blue z-depth-2">
+                <img src="http://panamajazzfestival.com/wp-content/uploads/2017/04/headerpjf.jpg" width="100%">
+            </div>
+-->
+            
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="valign-wrapper">
+                        <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
+                            <div class="hide-on-med-and-down">
+                                <p style="font-family: embrace; padding-top:75;" class="pjf-yellow-text hide-on-med-and-down">15 Panama Jazz Festival</p>
+                            </div>
+                            <div class=" hide-on-large-only">
+                                <p style="font-family: embrace; padding-top:95;" class="pjf-yellow-text">15 Panama Jazz Festival</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="events"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l12 m12">
+                    <h3>Horario de Eventos</h3> 
+                    
+                    <div class="card">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
