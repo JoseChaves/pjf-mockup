@@ -1,121 +1,128 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="materialize/css/materialize.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/flag-icon.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="materialize/js/materialize.min.js"></script>
-        <title>Viaja a Panama</title>
-        <script>
-            $( document ).ready(function(){
-                $(".button-collapse").sideNav({
-                    edge: 'left',
-                    draggable: true
-                });
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <title>Viaja a Panama</title>
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav({
+                edge: 'left',
+                draggable: true
             });
-        </script>
-        <style>
-             @font-face{
-                font-family: embrace;
-                src: url(fonts/embrace.ttf);
-            }
+        });
 
-            @font-face{
-                font-family: happyfox;
-                src: url(fonts/HappyFox-Condensed.otf);
-            }
+    </script>
+    <style>
+        @font-face {
+            font-family: embrace;
+            src: url(fonts/embrace.ttf);
+        }
+        
+        @font-face {
+            font-family: happyfox;
+            src: url(fonts/HappyFox-Condensed.otf);
+        }
+        
+        @font-face {
+            font-family: nexa;
+            src: url(fonts/Nexa_Bold.otf);
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: nexa;
+            src: url(fonts/Nexa_Light.otf);
+        }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        html {
+            font-family: nexa;
+        }
+        
+        .heavy-nexa {
+            font-family: nexa;
+            font-weight: bold;
+        }
 
+    </style>
 
-            @font-face{
-                font-family: nexa;
-                src: url(fonts/Nexa_Bold.otf);
-                font-weight: bold;
-            }
+    <!-- Include google map lib -->
 
-            @font-face{
-                font-family: nexa;
-                src: url(fonts/Nexa_Light.otf);
+</head>
 
-            }
+<body class="white">
+    <nav class="nav-extended nav-full-header pjf-blue">
 
-            body {
-                display: flex;
-                min-height: 100vh;
-                flex-direction: column;
-            }
-
-            main {
-                flex: 1 0 auto;
-            }
-
-            html{
-                font-family: nexa;
-            }
-
-        </style>
-
-        <!-- Include google map lib -->
-
-    </head>
-
-    <body class="white">
-        <nav class="nav-extended nav-full-header pjf-blue">
-
-<!--
+        <!--
             <div class="nav-background center pjf-blue z-depth-2">
                 <img src="http://panamajazzfestival.com/wp-content/uploads/2017/04/headerpjf.jpg" width="100%">
             </div>
 -->
 
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="valign-wrapper">
-                        <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
-                            <div class="hide-on-med-and-down">
-                                <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
-                            </div>
-                            <div class=" hide-on-large-only">
-                                <p style="font-family: embrace; padding-top:45;" class="pjf-yellow-text"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
-                            </div>
-                        </a>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="valign-wrapper">
+                    <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
+                        <div class="hide-on-med-and-down">
+                            <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
+                        </div>
+                        <div class=" hide-on-large-only">
+                            <p style="font-family: embrace; padding-top:45;" class="pjf-yellow-text"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
+                        </div>
+                    </a>
 
-                        <a href="#" data-activates="side-mob" class="button-collapse "><i class="material-icons">menu</i></a>
+                    <a href="#" data-activates="side-mob" class="button-collapse "><i class="material-icons">menu</i></a>
 
 
-                    </div>
-                </div>
-                <div class="nav-content">
-                    <div class="categories-wrapper left">
-                        <div class="categories-container">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="events.html#upfront">Eventos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Prensa</a></li>
-                        <li><a href="travel.html">Viaja a Panamá</a></li>
-                    </ul>
-                    <ul id="side-mob" class="side-nav">
-                        <li><div class="background center-align"><img src="http://panamajazzfestival.com/wp-content/uploads/2017/06/logo-pagina-web1.png" class="center-align" style="padding: 10">
-                            </div></li>
-                         <li><a href="events.html#upfront">Eventos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Prensa</a></li>
-                        <li><a href="travel.html">Viaja a Panamá</a></li>
-                    </ul>
-                    </div>
-                            </div><br>
                 </div>
             </div>
-        </nav>
+            <div class="nav-content">
+                <div class="categories-wrapper left">
+                    <div class="categories-container">
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="events.html#upfront">Eventos</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="travel.html">Viaja a Panamá</a></li>
+                        </ul>
+                        <ul id="side-mob" class="side-nav">
+                            <li>
+                                <div class="background center-align"><img src="http://panamajazzfestival.com/wp-content/uploads/2017/06/logo-pagina-web1.png" class="center-align" style="padding: 10">
+                                </div>
+                            </li>
+                            <li><a href="events.html#upfront">Eventos</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="travel.html">Viaja a Panamá</a></li>
+                        </ul>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+    </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Viaja a Panama</h3>
-                    <p>
-                        <h5>Idioma</h5>
-                        Español, aunque muchos panameños hablan inglés.<br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Viaja a Panama</h3>
+                <p>
+                    <h5>Idioma</h5>
+                    Español, aunque muchos panameños hablan inglés.<br><br>
 
                     <h5>Moneda</h5>
                     Dólar E.U.A. Las monedas propias de Panamá son equivalentes en tamaño y en valor a las de los E.U.A. <br> <br>
@@ -125,90 +132,144 @@
 
                     <h5>¿Cómo llegar?</h5>
                     La mejor manera de llegar a Panamá es a través de líneas aéreas. <a href="http://copaair.com">Copa Airlines</a>, tiene varios vuelos al país diariamente, así como otras aerolíneas. Si viene conduciendo puede llegar por la Vía Interamericana, la cual recorre Centroamérica. Si viene por la vía marítima, puede desembarcar en uno de nuestros puertos.</p>
-                </div>
             </div>
-                 <div class="row">
-                     <div class="col s12 l6">
-                    <h5>Clima</h5>
-                    <div class="card">
-                        <div class="card-container">
-                            <a href="https://www.accuweather.com/es/pa/panama-city/259549/weather-forecast/259549" class="aw-widget-legal">
-<!--
+        </div>
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>Clima</h5>
+                <div class="card">
+                    <div class="card-container">
+                        <a href="https://www.accuweather.com/es/pa/panama-city/259549/weather-forecast/259549" class="aw-widget-legal">
+                            <!--
 By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
 -->
-                            </a><div id="awcc1502401975503" class="aw-widget-current"  data-locationkey="259549" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1502401975503"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
-                     </div>
-                        </div>
+                        </a>
+                        <div id="awcc1502401975503" class="aw-widget-current" data-locationkey="259549" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1502401975503"></div>
+                        <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
                     </div>
-                    </div>
-
-                <div class="row">
-                    <h4>Transporte</h4>
-                    <div class="col l3 s12">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://i.ytimg.com/vi/NwxqPXGjsjg/maxresdefault.jpg">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                    <span class="card-title">MetroBus</span>
-                                </div>
-                                <div class="card-action">
-                                    <a href="http://www.mibus.com.pa/rutas/">Rutas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col l3 s12">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="http://www.panama-offshore-services.com/wp-content/uploads/2014/02/Panama-metro.png">
-                        </div>
-                        <div class="card-stacked">
-                          <div class="card-content">
-                              <span class="card-title">Metro de Panamá</span>
-                            </div>
-                            <div class="card-action">
-                                <a href="http://www.elmetrodepanama.com/">Más Información</a>
-                            </div>
-                        </div>
-                      </div>
-
                 </div>
             </div>
         </div>
-        <footer class="page-footer pjf-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l3 pjf-yellow-text heavy-nexa">
-                        <h5 class="heavy-nexa">Producción</h5>
-                        <div class="divider"></div><br>
-                        <a href="#" class="pjf-yellow-text">Créditos</a><br>
-                        <a href="#" class="pjf-yellow-text">Panama Jazz Productions</a><br>
-                        <br>
-                        <h5 class="heavy-nexa">Idioma</h5>
-                        <div class="divider"></div><br>
-                        <span class="flag-icon flag-icon-us"></span>
-                        &nbsp;
-                        <span class="flag-icon flag-icon-pa"></span>
-                    </div>
 
-                    <div class="pjf-yellow-text col s12 l3 offset-l6 heavy-nexa">
-                        <h5 class="heavy-nexa">Acerca del <span style="font-family: embrace">PJF</span></h5>
-                        <div class="divider"></div><br>
-                        <a href="#" class="pjf-yellow-text">Danilo Perez</a><br>
-                        <a href="#" class="pjf-yellow-text">Fundacion Danilo Perez</a><br>
-                        <a class="pjf-yellow-text" href="#">Centro de Musicoterapia de Panamá</a>
+        <div class="row">
+            <h4>Transporte</h4>
+            <div class="col l3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="https://i.ytimg.com/vi/NwxqPXGjsjg/maxresdefault.jpg">
                     </div>
-
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title">MetroBus</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.mibus.com.pa/rutas/">Rutas</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container pjf-yellow-text">
-                    © 2017 Panama Jazz Festival
+
+            <div class="col l3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="http://www.panama-offshore-services.com/wp-content/uploads/2014/02/Panama-metro.png">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title">Metro de Panamá</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.elmetrodepanama.com/">Más Información</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </body>
+
+            <div class="col l3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="http://www.panamaentaxi.com/wp-content/uploads/2014/11/Taxi_en_Casco_Antiguo.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title">Taxis</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.transito.gob.pa/tarifa-taxis">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="http://www.rpost.com/wp-content/uploads/2017/03/Uber-Logo-2.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title">Uber</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.uber.com/en-PA/cities/panama-city/">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <h4>Alquiler de Autos</h4>
+            <div class="col s12 l4">
+            
+                <div class="z-depth-1 waves-effect waves-light">
+                    <a href="http://www.alamopanama.com/" target="_blank">
+                    <img src="http://panamajazzfestival.com/wp-content/uploads/2015/11/alamo-1.jpg" width=100% >
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col s12 l8">
+                <h5>¿Cómo llegar?</h5>
+                <a href="https://www.waze.com/livemap?zoom=17&lat=8.99868&lon=-79.58335" class="btn-large waves-effect waves-light pjf-blue"><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Logo_for_waze.svg" height="90%" style="margin:5"></a><br><br>
+                <a href="https://goo.gl/maps/UopkBbovwRC2" class="btn-large waves-effect waves-light pjf-blue"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Maps.svg/2000px-Google_Maps.svg.png" height="90%" style="margin:5"></a>
+            </div>
+            
+        </div>
+
+    </div>
+    <footer class="page-footer pjf-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l3 pjf-yellow-text heavy-nexa">
+                    <h5 class="heavy-nexa">Producción</h5>
+                    <div class="divider"></div><br>
+                    <a href="#" class="pjf-yellow-text">Créditos</a><br>
+                    <a href="#" class="pjf-yellow-text">Panama Jazz Productions</a><br>
+                    <br>
+                    <h5 class="heavy-nexa">Idioma</h5>
+                    <div class="divider"></div><br>
+                    <span class="flag-icon flag-icon-us"></span> &nbsp;
+                    <span class="flag-icon flag-icon-pa"></span>
+                </div>
+
+                <div class="pjf-yellow-text col s12 l3 offset-l6 heavy-nexa">
+                    <h5 class="heavy-nexa">Acerca del <span style="font-family: embrace">PJF</span></h5>
+                    <div class="divider"></div><br>
+                    <a href="#" class="pjf-yellow-text">Danilo Perez</a><br>
+                    <a href="#" class="pjf-yellow-text">Fundacion Danilo Perez</a><br>
+                    <a class="pjf-yellow-text" href="#">Centro de Musicoterapia de Panamá</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container pjf-yellow-text">
+                © 2017 Panama Jazz Festival
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
