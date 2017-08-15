@@ -1,100 +1,99 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="materialize/css/materialize.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/flag-icon.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="materialize/js/materialize.min.js"></script>
 
-        <script>
-            $( document ).ready(function(){
-                $(".button-collapse").sideNav({
-                    edge: 'left',
-                    draggable: true
-                });
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
 
-                $('ul.tabs').tabs('select_tab', 'spanish');
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav({
+                edge: 'left',
+                draggable: true
             });
-        </script>
-        <style>
-             @font-face{
-                font-family: embrace;
-                src: url(fonts/embrace.ttf);
-            }
 
-            @font-face{
-                font-family: happyfox;
-                src: url(fonts/HappyFox-Condensed.otf);
-            }
+            $('ul.tabs').tabs('select_tab', 'spanish');
+        });
 
+    </script>
+    <style>
+        @font-face {
+            font-family: embrace;
+            src: url(fonts/embrace.ttf);
+        }
+        
+        @font-face {
+            font-family: happyfox;
+            src: url(fonts/HappyFox-Condensed.otf);
+        }
+        
+        @font-face {
+            font-family: nexa;
+            src: url(fonts/Nexa_Bold.otf);
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: nexa;
+            src: url(fonts/Nexa_Light.otf);
+        }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        html {
+            font-family: nexa;
+        }
+        
+        .heavy-nexa {
+            font-family: nexa;
+            font-weight: bold;
+        }
 
-            @font-face{
-                font-family: nexa;
-                src: url(fonts/Nexa_Bold.otf);
-                font-weight: bold;
-            }
+    </style>
 
-            @font-face{
-                font-family: nexa;
-                src: url(fonts/Nexa_Light.otf);
+    <!-- Include google map lib -->
 
-            }
+</head>
 
-            body {
-                display: flex;
-                min-height: 100vh;
-                flex-direction: column;
-            }
+<body class="white">
+    <nav class="nav-extended nav-full-header pjf-blue">
 
-            main {
-                flex: 1 0 auto;
-            }
-
-            html{
-                font-family: nexa;
-            }
-            
-            .heavy-nexa{
-                font-family: nexa;
-                font-weight: bold;
-            }
-
-
-        </style>
-
-        <!-- Include google map lib -->
-
-    </head>
-
-    <body class="white">
-        <nav class="nav-extended nav-full-header pjf-blue">
-
-<!--
+        <!--
             <div class="nav-background center pjf-blue z-depth-2">
                 <img src="http://panamajazzfestival.com/wp-content/uploads/2017/04/headerpjf.jpg" width="100%">
             </div>
 -->
 
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="valign-wrapper">
-                        <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
-                            <div class="hide-on-med-and-down">
-                                <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
-                            </div>
-                            <div class=" hide-on-large-only">
-                                <p style="font-family: embrace; padding-top:45;" class="pjf-yellow-text"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
-                            </div>
-                        </a>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="valign-wrapper">
+                    <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
+                        <div class="hide-on-med-and-down">
+                            <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
+                        </div>
+                        <div class=" hide-on-large-only">
+                            <p style="font-family: embrace; padding-top:45;" class="pjf-yellow-text"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
+                        </div>
+                    </a>
 
-                        <a href="#" data-activates="side-mob" class="button-collapse "><i class="material-icons">menu</i></a>
+                    <a href="#" data-activates="side-mob" class="button-collapse "><i class="material-icons">menu</i></a>
 
 
-                    </div>
                 </div>
-                <div class="nav-content">
+            </div>
+            <div class="nav-content">
                 <div class="categories-wrapper left">
                     <div class="categories-container">
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -118,98 +117,98 @@
                     </div>
                 </div><br>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div id="events"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l12 m12">
-                    <h3>Horario de Eventos</h3>
+    <div id="events"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l12 m12">
+                <h3>Horario de Eventos</h3>
 
-                    <div class="card z-depth-0">
-<!--                            <img src="https://www.allaboutjazz.com/photos/2010/danilperez2014_800x480.jpg">-->
-                        <div class="card-tabs pjf-blue-text">
-                            <ul class="tabs tabs-fixed-width">
-                                <li class="tab pjf-blue-text"><a class="pjf-blue-text" href="#spanish">Español</a></li>
-                                <li class="tab"><a href="#english" class="pjf-blue-text active">English</a></li>
-                            </ul>
+                <div class="card z-depth-0">
+                    <!--                            <img src="https://www.allaboutjazz.com/photos/2010/danilperez2014_800x480.jpg">-->
+                    <div class="card-tabs pjf-blue-text">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab pjf-blue-text"><a class="pjf-blue-text" href="#spanish">Español</a></li>
+                            <li class="tab"><a href="#english" class="pjf-blue-text active">English</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="card-content">
+                        <div id="english">
+                            <img src="imgs/shcedule_eng.PNG" class="materialboxed" width="100%">
                         </div>
 
-                        <div class="card-content">
-                            <div id="english">
-                                <img src="imgs/shcedule_eng.PNG" class="materialboxed" width="100%">
-                            </div>
-
-                            <div id="spanish">
-                                <img src="imgs/shcedule_eng.PNG" class="materialboxed" width="100%">
-                            </div>
+                        <div id="spanish">
+                            <img src="imgs/shcedule_eng.PNG" class="materialboxed" width="100%">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <br>
-                <h2>Eventos</h2>
-                <br>
+        </div>
+        <div class="row">
+            <br>
+            <h2>Eventos</h2>
+            <br>
 
-                <div class="col s12 m6 l6">
+            <div class="col s12 m6 l6">
                 <div class="card sticky-action medium">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="http://www.festivalarchive.com/wp-content/uploads/2013/11/panama-jazz-festival-north-sea-jazz-on-stage.jpg" width="">
                     </div>
-                    
+
                     <div class="card-content">
                         <span class="card-title activator">Conciertos<i class="material-icons right">more_vert</i></span>
                     </div>
-                    
+
                     <div class="card-reveal">
-                         <span class="card-title">Conciertos<i class="material-icons right">close</i></span>
+                        <span class="card-title">Conciertos<i class="material-icons right">close</i></span>
                         <p class="">Los conciertos del Panama Jazz Festival presentan músicos nacionales e internacionales y se realizan en varias locaciones…</p>
                     </div>
 
                     <div class="card-action">
                         <a href="#">Más Información</a>
                     </div>
-                   
+
 
                 </div>
-                </div>
+            </div>
 
-                <div class="col s12 m6 l6 small">
+            <div class="col s12 m6 l6 small">
                 <div class="card sticky-action medium">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class ="activator" src="http://asondesalsa.com.pa/wp-content/uploads/2016/01/panama-jazz-fest-16-gala-teatro-anayansi-90.jpg" width="">
+                        <img class="activator" src="http://asondesalsa.com.pa/wp-content/uploads/2016/01/panama-jazz-fest-16-gala-teatro-anayansi-90.jpg" width="">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator">Concierto de Gala<i class="material-icons right">more_vert</i></span>
-                        
+
                     </div>
 
                     <div class="card-action">
                         <a href="#">Más Información</a>
                     </div>
-                    
+
                     <div class="card-reveal">
                         <span class="card-title">Concierto de gala<i class="material-icons right">close</i></span>
                         <p class="">El Concierto de Gala del Panamá Jazz Festival tiene como prioridad recolectar fondos a beneficio de la Fundación…</p>
                     </div>
 
                 </div>
-                </div>
-
             </div>
-                <div class="row">
 
-                <div class="col s12 m6 l6 small">
+        </div>
+        <div class="row">
+
+            <div class="col s12 m6 l6 small">
                 <div class="card sticky-action medium">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class ="activator" src="http://panamajazzfestival.com/wp-content/uploads/2016/10/jam5.jpg" width="">
+                        <img class="activator" src="http://panamajazzfestival.com/wp-content/uploads/2016/10/jam5.jpg" width="">
                     </div>
-                    
+
                     <div class="card-content">
                         <span class="card-title activator">Jam Sessions<i class="material-icons right">more_vert</i></span>
-                        
+
                     </div>
 
                     <div class="card-action">
@@ -221,18 +220,18 @@
                     </div>
 
                 </div>
-                </div>
+            </div>
 
 
-                <div class="col s12 m6 l6 small">
+            <div class="col s12 m6 l6 small">
                 <div class="card sticky-action medium">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class ="activator" src="http://panamajazzfestival.com/wp-content/uploads/2016/10/jam5.jpg" width="">
+                        <img class="activator" src="https://i2.wp.com/latinjazznet.com/wp-content/uploads/2012/11/Panama-Jazz-Festival-Workshops-14.jpg?ssl=1" width="">
                     </div>
-                    
+
                     <div class="card-content">
                         <span class="card-title activator">Clinicas<i class="material-icons right">more_vert</i></span>
-                        
+
                     </div>
 
                     <div class="card-action">
@@ -240,47 +239,47 @@
                     </div>
                     <div class="card-reveal">
                         <span class="card-title">Clinicas<i class="material-icons right">close</i></span>
-                        <p class="">El Concierto de Gala del Panamá Jazz Festival tiene como prioridad recolectar fondos a beneficio de la Fundación…</p>
+                        <p class="">Las clínicas musicales del Panama Jazz Festival son clases maestras dictadas por los destacados artistas que vienen …</p>
                     </div>
 
                 </div>
-                </div>
-                </div>
-
+            </div>
         </div>
 
-        <footer class="page-footer pjf-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l3 pjf-yellow-text heavy-nexa">
-                        <h5 class="heavy-nexa">Producción</h5>
-                        <div class="divider"></div><br>
-                        <a href="#" class="pjf-yellow-text">Créditos</a><br>
-                        <a href="#" class="pjf-yellow-text">Panama Jazz Productions</a><br>
-                        <br>
-                        <h5 class="heavy-nexa">Idioma</h5>
-                        <div class="divider"></div><br>
-                        <span class="flag-icon flag-icon-us"></span>
-                        &nbsp;
-                        <span class="flag-icon flag-icon-pa"></span>
-                    </div>
-                    
-                    <div class="pjf-yellow-text col s12 l3 offset-l6 heavy-nexa">
-                        <h5 class="heavy-nexa">Acerca del <span style="font-family: embrace">PJF</span></h5>
-                        <div class="divider"></div><br>
-                        <a href="#" class="pjf-yellow-text">Danilo Perez</a><br>
-                        <a href="#" class="pjf-yellow-text">Fundacion Danilo Perez</a><br>                        
-                        <a class="pjf-yellow-text" href="#">Centro de Musicoterapia de Panamá</a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container pjf-yellow-text">
-                    © 2017 Panama Jazz Festival
-                </div>
-            </div>
-        </footer>
+    </div>
 
-    </body>
+    <footer class="page-footer pjf-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l3 pjf-yellow-text heavy-nexa">
+                    <h5 class="heavy-nexa">Producción</h5>
+                    <div class="divider"></div><br>
+                    <a href="#" class="pjf-yellow-text">Créditos</a><br>
+                    <a href="#" class="pjf-yellow-text">Panama Jazz Productions</a><br>
+                    <br>
+                    <h5 class="heavy-nexa">Idioma</h5>
+                    <div class="divider"></div><br>
+                    <span class="flag-icon flag-icon-us"></span> &nbsp;
+                    <span class="flag-icon flag-icon-pa"></span>
+                </div>
+
+                <div class="pjf-yellow-text col s12 l3 offset-l6 heavy-nexa">
+                    <h5 class="heavy-nexa">Acerca del <span style="font-family: embrace">PJF</span></h5>
+                    <div class="divider"></div><br>
+                    <a href="#" class="pjf-yellow-text">Danilo Perez</a><br>
+                    <a href="#" class="pjf-yellow-text">Fundacion Danilo Perez</a><br>
+                    <a class="pjf-yellow-text" href="#">Centro de Musicoterapia de Panamá</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container pjf-yellow-text">
+                © 2017 Panama Jazz Festival
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
