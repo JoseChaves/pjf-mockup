@@ -30,42 +30,44 @@
             font-family: embrace;
             src: url(fonts/embrace.ttf);
         }
-        
+
         @font-face {
             font-family: happyfox;
             src: url(fonts/HappyFox-Condensed.otf);
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Bold.otf);
             font-weight: bold;
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Light.otf);
         }
-        
+
         body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
         }
-        
+
         main {
             flex: 1 0 auto;
         }
-        
+
         html {
             font-family: nexa;
+            -webkit-margin-start:0;
+            -webkit-margin-before:0;
         }
-        
+
         .heavy-nexa {
             font-family: nexa;
             font-weight: bold;
         }
-        
+
         .bold-title:hover{
             font-family: nexa;
             font-weight: bold;
@@ -124,7 +126,7 @@
                 </div>
                 <!--
                 <div class="nav-content">
-                    
+
                         <div class="categories-wrapper left">
                         <div class="categories-container">
                     <ul id="nav-mobile" class="right hide-on-med-and-down">

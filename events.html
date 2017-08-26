@@ -25,38 +25,42 @@
             font-family: embrace;
             src: url(fonts/embrace.ttf);
         }
-        
+
         @font-face {
             font-family: happyfox;
             src: url(fonts/HappyFox-Condensed.otf);
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Bold.otf);
             font-weight: bold;
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Light.otf);
         }
-        
+
         body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
         }
-        
+
         main {
             flex: 1 0 auto;
         }
-        
+
         html {
             font-family: nexa;
             color: #606060;
+            -webkit-margin-start:0;
+            -webkit-margin-before:0;
+            -webkit-margin-before:0;
+
         }
-        
+
         .heavy-nexa {
             font-family: nexa;
             font-weight: bold;
@@ -80,10 +84,11 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="valign-wrapper">
-                    <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
+                    <a href="index.html" class="brand-logo thin center " style="-webkit-margin-before:-95px" id="upfront">
                         <div class="hide-on-med-and-down">
 <!--                            <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>-->
-                            <img class="responsive-img" src="imgs/logoWEB.png" width="75%" style="padding-top:95">
+                            <img class="responsive-img" src="imgs/logoWEB.png" width="75%" style="padding-top:95;-webkit-margin-start:0;
+                            -webkit-margin-before:0;">
                         </div>
                         <div class=" hide-on-large-only">
 <!--                            <p style="font-family: embrace; padding-top:45;" class="pjf-yellow-text"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>-->
