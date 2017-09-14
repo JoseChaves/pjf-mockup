@@ -42,6 +42,11 @@
             src: url(fonts/Nexa_Light.otf);
         }
 
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        ::i-block-chrome, .safari_fix{
+          -webkit-margin-before:-95px;
+        }}
+
         body {
             display: flex;
             min-height: 100vh;
@@ -84,7 +89,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="valign-wrapper">
-                    <a href="index.html" class="brand-logo thin center " style="-webkit-margin-before:-95px" id="upfront">
+                    <a href="index.html" class="brand-logo thin center " style="" id="upfront">
                         <div class="hide-on-med-and-down">
 <!--                            <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>-->
                             <img class="responsive-img" src="imgs/logoWEB.png" width="75%" style="padding-top:95;-webkit-margin-start:0;
