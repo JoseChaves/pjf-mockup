@@ -20,41 +20,45 @@
 
     </script>
     <style>
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    ::i-block-chrome, .safari_fix{
+      -webkit-margin-before:-95px;
+    }}
         @font-face {
             font-family: embrace;
             src: url(fonts/embrace.ttf);
         }
-        
+
         @font-face {
             font-family: happyfox;
             src: url(fonts/HappyFox-Condensed.otf);
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Bold.otf);
             font-weight: bold;
         }
-        
+
         @font-face {
             font-family: nexa;
             src: url(fonts/Nexa_Light.otf);
         }
-        
+
         body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
         }
-        
+
         main {
             flex: 1 0 auto;
         }
-        
+
         html {
             font-family: nexa;
         }
-        
+
         .heavy-nexa {
             font-family: nexa;
             font-weight: bold;
@@ -78,7 +82,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="valign-wrapper">
-                    <a href="index.html" class="brand-logo thin center " style="margin-top:0;padding-top:0" id="upfront">
+                    <a href="index.html" class="brand-logo thin center safari_fix" style="margin-top:0;padding-top:0" id="upfront">
                         <div class="hide-on-med-and-down">
                             <p style="font-family: embrace; padding-top:50;" class="pjf-yellow-text hide-on-med-and-down"><span class="white-text">15</span> Panama <span class="white-text">Jazz</span> Festival</p>
                         </div>
@@ -247,7 +251,7 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
 
         <div class="row">
             <h4>Hospedaje</h4>
-            
+
             <div class="col s12 l4">
                 <div class="card small horizontal">
                     <div class="card-image">
